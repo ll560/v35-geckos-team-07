@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Row, Column } from 'react-bootstrap';
 
 function Home() {
     return (
@@ -9,7 +10,7 @@ function Home() {
                 </Column>
             </Row>
             <Row className="sign-row">
-                <Column className="sign-column" sm={6} lg={3}>
+                <Column className="sign-column" sm={6} lg={3}> 
                     Sign 1
                 </Column>
                 <Column className="sign-column" sm={6} lg={3}>
