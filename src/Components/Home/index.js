@@ -1,51 +1,53 @@
 import React from 'react';
-import { Container, Row, Column } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function Home() {
     return (
         <Container className="home-container">
             <Row>
-                <Column className="h2-column">
+                <Col className="h2-column">
                     <h2>Choose Your Zodiac Sign</h2>
-                </Column>
+                </Col>
             </Row>
             <Row className="sign-row">
-                <Column className="sign-column" sm={6} lg={3}> 
+                <Col className="sign-column" sm={6} lg={3}> 
                     Sign 1
-                </Column>
-                <Column className="sign-column" sm={6} lg={3}>
+                </Col>
+                <Col className="sign-column" sm={6} lg={3}>
                     Sign
-                </Column> 2
-                <Column className="sign-column" sm={6} lg={3}>
+                </Col> 2
+                <Col className="sign-column" sm={6} lg={3}>
                     Sign 3
-                </Column>
-                <Column className="sign-column" sm={6} lg={3}>
+                </Col>
+                <Col className="sign-column" sm={6} lg={3}>
                     Sign 4
-                </Column>
-                <Column className="sign-column" sm={6} lg={3}>
+                </Col>
+                <Col className="sign-column" sm={6} lg={3}>
                     Sign 5
-                </Column>
-                <Column className="sign-column" sm={6} lg={3}>
+                </Col>
+                <Col className="sign-column" sm={6} lg={3}>
                     Sign 6
-                </Column>
-                <Column className="sign-column" sm={6} lg={3}>
+                </Col>
+                <Col className="sign-column" sm={6} lg={3}>
                     Sign 7
-                </Column>
-                <Column className="sign-column" sm={6} lg={3}>
+                </Col>
+                <Col className="sign-column" sm={6} lg={3}>
                     Sign 8
-                </Column>
-                <Column className="sign-column" sm={6} lg={3}>
+                </Col>
+                <Col className="sign-column" sm={6} lg={3}>
                     Sign 9
-                </Column>
-                <Column className="sign-column" sm={6} lg={3}>
+                </Col>
+                <Col className="sign-column" sm={6} lg={3}>
                     Sign 10
-                </Column>
-                <Column className="sign-column" sm={6} lg={3}>
+                </Col>
+                <Col className="sign-column" sm={6} lg={3}>
                     Sign 11
-                </Column>
-                <Column className="sign-column" sm={6} lg={3}>
+                </Col>
+                <Col className="sign-column" sm={6} lg={3}>
                     Sign 12
-                </Column>
+                </Col>
             </Row>
         </Container>
     )
