@@ -16,6 +16,7 @@ function App() {
       </header>
       <main>
         <Home/>
+        <Horoscope/>
       </main>
      <footer>
        <Footer/>
