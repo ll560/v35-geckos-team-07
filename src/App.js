@@ -14,7 +14,8 @@ function App() {
         <Header />
       </header>
       <main>
-        <Home />
+        <Home/>
+        <Horoscope/>
         <About />
         <Developers />
       </main>
