@@ -5,10 +5,13 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Horoscope from './Components/Horoscope';
+//import Aztro from './Components/Aztro'
 import "./App.css";
 
-function App() {
-  return (
+class App extends React.Component {
+
+  render () {
+    return (
     <div className="page-container">
       <header>
         <Header />
@@ -24,6 +27,7 @@ function App() {
       </footer>
     </div>
   );
+}
 }
 
 export default App;

@@ -2,6 +2,8 @@ import React from 'react'
 import './index.css'
 import {Button, Card, Row, Col} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Aztro from '../Aztro'
+import aries_icon from '../../assets/aries_icon.png';
 
 function index() {
     return (
@@ -16,6 +18,7 @@ function index() {
                 <Button class="btn btn-lg">Yesterday</Button>
                 </div>
             </Col>
+    
             <Col>
             <div className="today">
             <Button class="btn btn-lg">Today</Button>
@@ -28,11 +31,17 @@ function index() {
             </Col>
         </Row>
             <Card className="mb-3" style={{ color: "#000"}}>
-                <Card.Img src="https://picsum.photos/200/100" className="img-fliud" alt="placeholder-horoscope"/>
+                
+                
             <Card.Body>
+                <Card.Img src={aries_icon} id="aries" className="img-thumbnail img-fluid mx-auto d-block" alt="placeholder-horoscope-img"/>
+
                 <Card.Title>Daily Horoscope</Card.Title>
             <div className="daily-horoscope">
-                <p>horoscope</p>
+                
+
+            <Aztro></Aztro>
+
             </div>
             </Card.Body>
             </Card>
