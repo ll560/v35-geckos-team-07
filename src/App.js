@@ -4,25 +4,30 @@ import Developers from "./Components/Developers";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
-//import Horoscope from './Components/Horoscope';
+import Horoscope from "./Components/Horoscope";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 function App() {
   return (
-    <div className="page-container">
-      <header>
-        <Header />
-      </header>
-      <main>
-        <Home/>
-        <Horoscope/>
-        <About />
-        <Developers />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+    <Router>
+      <div className="page-container">
+        <header>
+          <Header />
+        </header>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/team" element={<Developers />} />
+          </Routes>
+          <Horoscope />
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
+    </Router>
   );
 }
 
