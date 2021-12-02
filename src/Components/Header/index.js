@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import { Link } from "react-router-dom";
+import "./navbar.css";
 
 function Header() {
   const [openDrawer, toggleDrawer] = useState(false);
@@ -32,10 +33,11 @@ function Header() {
         </HamburgerButton.Wrapper>
 
         <Navbar.Items ref={drawerRef} openDrawer={openDrawer}>
-          <Link to="/about">
+          <Link to="/about" style={{ textDecoration: "none" }}>
             <Navbar.Item>ABOUT</Navbar.Item>
           </Link>
-          <Link to="/team">
+          <hr></hr>
+          <Link to="/team" style={{ textDecoration: "none" }}>
             <Navbar.Item>MEET THE TEAM</Navbar.Item>
           </Link>
         </Navbar.Items>
@@ -48,7 +50,7 @@ const Styles = {
   Wrapper: styled.main`
     display: flex;
     background-color: #eeeeee;
-    height: 7vh;
+    height: 8vh;
   `,
 };
 
@@ -64,7 +66,7 @@ const Navbar = {
     justify-content: space-between;
     align-items: center;
 
-    background-color: white;
+    background-color: #f0f5f9;
 
     // 40em == 640px
     @media only screen and (max-width: 1024px) {
@@ -72,23 +74,37 @@ const Navbar = {
       width: 100vw;
     }
   `,
-  Logo: styled.h1`
-    margin-right: auto;
-    margin-left: auto
+  Logo: styled.a`
+    margin: auto;
+    position: relative;
     padding: 0.5rem 1rem;
-  
+    background-color: #456990;
+    background-image: linear-gradient(45deg, #a677a6, #e2cad1);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: bold;
   `,
+
   Items: styled.ul`
     display: flex;
     list-style: none;
-    margin-top: 5vh;
+    padding-top: 1rem;
+    text-align: center;
 
     @media only screen and (max-width: 1024px) {
       position: fixed;
       right: 0;
-      top: 0;
-
-      height: 25%;
+      top: 6vh;
+      width: 100%;
+      height: 15%;
+      background-color: #456990;
+      background-image: linear-gradient(45deg, #a677a6, #e2cad1);
 
       flex-direction: column;
 
@@ -100,13 +116,26 @@ const Navbar = {
       transform: ${({ openDrawer }) =>
         openDrawer ? `translateX(0)` : `translateX(100%)`};
     }
+
+    @media only screen and (max-width: 40em) {
+      top: 8vh;
+    }
   `,
   Item: styled.li`
-    padding: 0 1rem;
+    padding: 0 3rem;
     cursor: pointer;
+    font-size: 2.5rem;
+    color: #3d3d3d;
+    font-weight: bold;
 
     @media only screen and (max-width: 1024px) {
-      padding: 1rem 0;
+      padding: 2rem 0;
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 40em) {
+      padding: 1.5rem 0;
+      font-size: 1.75rem;
     }
   `,
 };
@@ -124,7 +153,6 @@ const HamburgerButton = {
       display: block;
     }
 
-    /* Remove default button styles */
     border: none;
     background: transparent;
     outline: none;
@@ -149,12 +177,12 @@ const HamburgerButton = {
     &:after,
     &:before {
       /* Create lines */
-      height: 2px;
+      height: 5px;
       pointer-events: none;
       display: block;
       content: "";
       width: 100%;
-      background-color: black;
+      background-color: #456990;
       position: absolute;
     }
 
