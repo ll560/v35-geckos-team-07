@@ -4,54 +4,57 @@ import Developers from "./Components/Developers";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
-import Horoscope from './Components/Horoscope';
+import Horoscope from "./Components/Horoscope";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-
-
 
 class App extends React.Component {
 
-constructor(props) {
-  super(props);
-  this.state = {horoscope: ""};
-  this.state ={sign:""};
-}
-  setHoroscopeCallback =(data) =>{
-    console.log("this "+ JSON.stringify(data))
-    this.setState({
-      horoscope: data,  
-    });
-  }
 
-  setSignCallback = (sign) => {
-    console.log("NEW sign" + JSON.stringify(sign))
-    
-    this.setState({
-      sign: sign,
-    });
+  constructor(props) {
+    super(props);
+    this.state = {horoscope: ""};
+    this.state ={sign:""};
   }
+    setHoroscopeCallback =(data) =>{
+      console.log("this "+ JSON.stringify(data))
+      this.setState({
+        horoscope: data,  
+      });
+    }
   
-
-  render () {
-    return (
-    <div className="page-container">
-      <header>
-        <Header />
-      </header>
-      <main>
-        <Home setHoroscopeCallback={this.setHoroscopeCallback} setSignCallback={this.setSignCallback}/>
-        <Horoscope data={this.state.horoscope} sign={this.state.sign}></Horoscope>
-        
-        
-        <About />
-        <Developers />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+    setSignCallback = (sign) => {
+      console.log("NEW sign" + JSON.stringify(sign))
+      
+      this.setState({
+        sign: sign,
+      });
+    }
+  
+  render(){
+  return (
+    <Router>
+      <div className="page-container">
+        <header>
+          <Header />
+        </header>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home  setHoroscopeCallback={this.setHoroscopeCallback} setSignCallback={this.setSignCallback}/>} />
+            <Route path="/about" element={<About />} />
+            <Route path="/team" element={<Developers />} />
+            <Route path="/horoscope" element={<Horoscope data={this.state.horoscope} sign={this.state.sign}/>}/>
+          </Routes>
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
+    </Router>
   );
+
 }
 }
+
 
 export default App;

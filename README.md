@@ -1,14 +1,65 @@
-# voyage-tasks
+</div>
+<h1>ZODAILY</h1>
+<ol>
+  
+<!--===== TABLE OF CONTENTS =====-->
 
-Your project's `readme` is as important to success as your code. For 
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point - 
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
+<!--===== ABOUT THE PROJECT =====-->
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
+## About The Project
 
-> Own it & Make it your Own!
+About the APP description
+
+"Live Link"
+
+### Built With
+
+- React
+
+<!--===== GETTING STARTED =====-->
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Installation
+
+1. Clone the repo
+2. Run npm install
+3. In the project directory, you can run npm start and run in development mode.
+
+<!--===== CONTACT =====-->
+
+## Contact
+
+Marilyn - <a href=https://github.com/MarilynPapadopoulos>Github</a>
+
+Ashley - <a href="https://github.com/ach0319">Github</a>
+
+Lisa - <a href="https://github.com/ll560">Github</a>
+
+<!--===== ACKNOWLEDGEMENTS =====-->
+
+## Acknowledgements
+
+- [Chingu.io](https://chingu.io)
