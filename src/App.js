@@ -5,10 +5,32 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Horoscope from './Components/Horoscope';
-//import Aztro from './Components/Aztro'
 import "./App.css";
 
+
+
 class App extends React.Component {
+
+constructor(props) {
+  super(props);
+  this.state = {horoscope: ""};
+  this.state ={sign:""};
+}
+  setHoroscopeCallback =(data) =>{
+    console.log("this "+ JSON.stringify(data))
+    this.setState({
+      horoscope: data,  
+    });
+  }
+
+  setSignCallback = (sign) => {
+    console.log("NEW sign" + JSON.stringify(sign))
+    
+    this.setState({
+      sign: sign,
+    });
+  }
+  
 
   render () {
     return (
@@ -17,8 +39,10 @@ class App extends React.Component {
         <Header />
       </header>
       <main>
-        <Home/>
-        <Horoscope/>
+        <Home setHoroscopeCallback={this.setHoroscopeCallback} setSignCallback={this.setSignCallback}/>
+        <Horoscope data={this.state.horoscope} sign={this.state.sign}></Horoscope>
+        
+        
         <About />
         <Developers />
       </main>

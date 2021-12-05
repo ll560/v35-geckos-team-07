@@ -1,47 +1,85 @@
-import React from 'react'
-import './index.css'
+import React, { Component } from 'react'; 
 import {Button, Card, Row, Col} from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Aztro from '../Aztro'
-import aries_icon from '../../assets/aries_icon.png';
+import './index.css'
 
-function index() {
-    return (
-        <div >
-            <div className="sign-info">
-           
-            <h1>Sign Information</h1>
-             </div>
-        <Row>
-            <Col>
-                <div className="yesterday">
-                <Button class="btn btn-lg">Yesterday</Button>
-                </div>
-            </Col>
+
+class Api extends Component {
     
-            <Col>
-            <div className="today">
-            <Button class="btn btn-lg">Today</Button>
+   
+
+    constructor(props){
+        super(props);
+        this.state = {
+          
+          json: {},
+        }
+    }
+   
+      
+    componentDidMount () {
+        
+        
+        let sign=this.props.sign ?? " " 
+        console.log(sign) 
+        let day = {day: 'today'};
+        
+        var url = new window.URL(`https://aztro.sameerkumar.website/?sign=${sign}&day=${day}`);
+        Object.keys(day).forEach(function (d) {url.searchParams.set(d, day[d]); });
+        Object.keys(sign).forEach(function (k) {
+        url.searchParams.set(k, sign[k]);});
+
+    
+    url.toString();
+
+        fetch(url, {
+            method: 'POST'
+        }).then(response => response.json())
+        .then(json => { this.setState({json}); });
+    
+}
+    
+
+    render() {
+        
+        return (
+            <div>   
+                
+                <div className="sign-info">
+           
+           
             </div>
-            </Col>
+       <Row>
+           
+   
+           
+       </Row>
+           <Card className="mb-3" style={{ color: "#000"}}>
+               
+               
+           <Card.Body>
+               <Card.Img  id="aries" className="img-thumbnail img-fluid mx-auto d-block" alt="placeholder-horoscope-img"/>  
+            <Card.Title id="title">Daily Horoscope </Card.Title>
             <Col>
-            <div className="tomorrow">
-            <Button class="btn btn-lg">Tomorrow</Button>
-            </div>
-            </Col>
-        </Row>
-            <Card className="mb-3" style={{ color: "#000"}}>
-                
-                
-            <Card.Body>
-                <Card.Img src={aries_icon} id="aries" className="img-thumbnail img-fluid mx-auto d-block" alt="placeholder-horoscope-img"/>
+           <div id="today">
+           <Button className="btn btn-lg" id="sign-text">Sign: {this.props.sign ?? " "}  <br /></Button>
+           </div>
+           </Col>
 
-                <Card.Title>Daily Horoscope</Card.Title>
-            <div className="daily-horoscope">
+    <div className="daily-horoscope">
                 
+                  
 
-            <Aztro></Aztro>
+              Current Date: {this.props.data?.current_date ?? ' '} <br />
+              Compatibility: {this.props.data?.compatibility ?? ' '} <br />
+              Lucky Number: {this.props.data?.lucky_number ?? ' '} <br />
+              Lucky Time: {this.props.data?.lucky_time ?? ' '} <br />
+              Color: {this.props.data?.color ?? ' '} <br />
+              Date Range: {this.props.data?.date_range ?? ' '} <br />
+              Mood: {this.props.data?.mood ?? ' '} <br />
+              Horoscope: {this.props.data?.description ?? ' '} <br />
 
+
+            
             </div>
             </Card.Body>
             </Card>
@@ -49,7 +87,13 @@ function index() {
 
     
         </div>
-    )
+            
+
+        
+            
+        );
+        
+    }
 }
 
-export default index
+export default Api;
