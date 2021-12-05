@@ -17,13 +17,13 @@ import capricorn_icon from '../../assets/capricorn_icon.png';
 import aquarius_icon from '../../assets/aquarius_icon.png';
 import pisces_icon from '../../assets/pisces_icon.png';
 
-//import Icons from '../Icons';
+
    
 
 function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {    
     const [currentHoroscopeData, setCurrentHoroscopeData] = useState();
     const [sign, setSign] = useState('');
-    const [signImg, setSignImg] = useState('');
+  
  
     useEffect( () => {
 
@@ -62,11 +62,10 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
     const handleClick = (e) => {
         setSign(e.target.id); 
         console.log(e.target.id);
-        setSignImg(e.target.src);
-        console.log(e.target.src);
+        
         
         return sign;
-        return signImg;
+        
         //updatePage();
     }
    
