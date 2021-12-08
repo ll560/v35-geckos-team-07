@@ -103,8 +103,8 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
                         </button>
                     </div>
                     <div className="sign-title">
-                        <p>Aries</p> 
-                        <p>(March 21–April 20)</p>
+                        <p className="sign-name">Aries</p> 
+                        <p className="sign-date">(March 21–April 20)</p>
                     </div>
                 </Col>
                 <Col className="sign-column" sm={6} lg={4}>
@@ -114,8 +114,8 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
                         </button>
                     </div>
                     <div className="sign-title">
-                        <p>Taurus</p> 
-                        <p>(April 21–May 20)</p>
+                        <p className="sign-name">Taurus</p> 
+                        <p className="sign-date">(April 21–May 20)</p>
                     </div>
                 </Col> 
                 <Col className="sign-column" sm={6} lg={4}>
@@ -125,8 +125,8 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
                         </button>
                     </div>
                     <div className="sign-title">
-                        <p>Gemini</p> 
-                        <p>(May 21–June 21)</p>
+                        <p className="sign-name">Gemini</p> 
+                        <p className="sign-date">(May 21–June 21)</p>
                     </div>
                 </Col>
                 <Col className="sign-column" sm={6} lg={4}>
@@ -136,8 +136,8 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
                         </button>
                     </div>
                     <div className="sign-title">
-                        <p>Cancer</p> 
-                        <p>(June 22–July 22)</p>
+                        <p className="sign-name">Cancer</p> 
+                        <p className="sign-date">(June 22–July 22)</p>
                     </div>
                 </Col>
                 <Col className="sign-column" sm={6} lg={4}>
@@ -147,8 +147,8 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
                         </button>
                     </div>
                     <div className="sign-title">
-                        <p>Leo</p> 
-                        <p>(July 23–August 22</p>
+                        <p className="sign-name">Leo</p> 
+                        <p className="sign-date">(July 23–August 22)</p>
                     </div>
                 </Col>
                 <Col className="sign-column" sm={6} lg={4}>
@@ -158,8 +158,8 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
                         </button>
                     </div>
                     <div className="sign-title">
-                        <p>Virgo</p> 
-                        <p>(August 23–September 22)</p>
+                        <p className="sign-name">Virgo</p> 
+                        <p className="sign-date">(August 23–September 22)</p>
                     </div>
                 </Col>
                 <Col className="sign-column" sm={6} lg={4}>
@@ -169,8 +169,8 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
                         </button>
                     </div>
                     <div className="sign-title">
-                        <p>Libra</p> 
-                        <p>(September 23–October 23)</p>
+                        <p className="sign-name">Libra</p> 
+                        <p className="sign-date">(September 23–October 23)</p>
                     </div>
                 </Col>
                 <Col className="sign-column" sm={6} lg={4}>
@@ -180,8 +180,8 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
                         </button>
                     </div>
                     <div className="sign-title">
-                        <p>Scorpio</p> 
-                        <p>(October 23–November 22)</p>
+                        <p className="sign-name">Scorpio</p> 
+                        <p className="sign-date">(October 23–November 22)</p>
                     </div>
                 </Col>
                 <Col className="sign-column" sm={6} lg={4}>
@@ -191,8 +191,8 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
                         </button>
                     </div>
                     <div className="sign-title">
-                        <p>Sagittarius</p> 
-                        <p>(November 23–December 21)</p>
+                        <p className="sign-name">Sagittarius</p> 
+                        <p className="sign-date">(November 23–December 21)</p>
                     </div>
                 </Col>
                 <Col className="sign-column" sm={6} lg={4}>
@@ -202,8 +202,8 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
                         </button>
                     </div>
                     <div className="sign-title">
-                        <p>Capricorn</p> 
-                        <p>(December 22–January 19)</p>
+                        <p className="sign-name">Capricorn</p> 
+                        <p className="sign-date">(December 22–January 19)</p>
                     </div>
                 </Col>
                 <Col className="sign-column" sm={6} lg={4}>
@@ -213,8 +213,8 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
                         </button>
                     </div>
                     <div className="sign-title">
-                        <p>Aquarius</p> 
-                        <p>(January 20–February 18)</p>
+                        <p className="sign-name">Aquarius</p> 
+                        <p className="sign-date">(January 20–February 18)</p>
                     </div>
                 </Col>
                 <Col className="sign-column" sm={6} lg={4}>
@@ -224,8 +224,8 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
                         </button>
                     </div>
                     <div className="sign-title">
-                        <p> Pisces</p> 
-                        <p>(February 19–March 20)</p>
+                        <p className="sign-name"> Pisces</p> 
+                        <p className="sign-date">(February 19–March 20)</p>
                     </div>
                 </Col>
             </Row>

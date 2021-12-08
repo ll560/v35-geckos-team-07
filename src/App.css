@@ -14,6 +14,8 @@
 .home-heading {
   text-align: center;
   font-family: 'Sigmar One', cursive;
+  font-size: 65px;
+  color: #456990;
 }
 .sign-row {
   display: flex;
@@ -36,6 +38,7 @@
   margin-top: 30px;
   background: linear-gradient(#A677A6, #E2CAD1);
   border: none;
+  box-shadow: 3px 3px 3px 3px  #456990;
 }
 .sign-title {
   display: flex;
@@ -44,8 +47,13 @@
   line-height: 1.8em;
   margin-top: 20px;
 }
-.sign-title p {
-  font-size: 20px;
+.sign-name {
+  font-weight: bold;
+  font-size: 32px;
+}
+.sign-date {
+  font-size: 18px;
+  color: #3D3D3D;
 }
 /* Home Ends */
 @media screen and (max-width: 376px) {
