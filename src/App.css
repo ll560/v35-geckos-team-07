@@ -26,4 +26,9 @@
   .sign-column {
     flex-basis: 50%;
   }
+
+#myDIV{
+  width: 100%;
+  
+}
 }
