@@ -6,6 +6,7 @@ import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Horoscope from "./Components/Horoscope";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import "./App.css";
 
 class App extends React.Component {
@@ -15,21 +16,29 @@ class App extends React.Component {
     super(props);
     this.state = {horoscope: ""};
     this.state ={sign:""};
+  
   }
+  
+    
+
     setHoroscopeCallback =(data) =>{
-      console.log("this "+ JSON.stringify(data))
+      console.log("this"+ JSON.stringify(data))
       this.setState({
         horoscope: data,  
       });
+      
+      
     }
   
     setSignCallback = (sign) => {
-      console.log("NEW sign" + JSON.stringify(sign))
+      console.log("Sign date on App.js: " + JSON.stringify(sign))
       
-      this.setState({
+     this.setState({
         sign: sign,
       });
     }
+
+
   
   render(){
   return (
@@ -39,12 +48,15 @@ class App extends React.Component {
           <Header />
         </header>
         <main>
+        
           <Routes>
-            <Route path="/" element={<Home  setHoroscopeCallback={this.setHoroscopeCallback} setSignCallback={this.setSignCallback}/>} />
+            <Route path="/" element={<Home setHoroscopeCallback={this.setHoroscopeCallback} setSignCallback={this.setSignCallback}/>}/>
+            <Route path="/horoscope" element={<Horoscope data={this.state.horoscope} sign={this.state.sign} />}/>
             <Route path="/about" element={<About />} />
             <Route path="/team" element={<Developers />} />
-            <Route path="/horoscope" element={<Horoscope data={this.state.horoscope} sign={this.state.sign}/>}/>
           </Routes>
+         
+         
         </main>
         <footer>
           <Footer />

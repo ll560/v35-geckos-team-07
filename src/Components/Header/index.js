@@ -20,12 +20,14 @@ function Header() {
     return () => document.removeEventListener("mousedown", closeDrawer);
   }, []);
 
+
+
   return (
     <Styles.Wrapper>
       <CSSReset />
       <Navbar.Wrapper>
         <Link to="/">
-          <Navbar.Logo>ZODAILY</Navbar.Logo>
+          <Navbar.Logo >ZODAILY</Navbar.Logo>
         </Link>
 
         <HamburgerButton.Wrapper onClick={() => toggleDrawer(true)}>

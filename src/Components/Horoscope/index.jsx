@@ -13,6 +13,7 @@ class Api extends Component {
           
           json: {},
         }
+        
     }
    
       
@@ -42,22 +43,19 @@ class Api extends Component {
     render() {
         
         return (
-            <div>   
-                
+            <div className="horoscope-body">
+            <div>    
                 <div className="sign-info">
-           
-           
             </div>
        <Row>
            
-   
            
        </Row>
            <Card className="mb-3" style={{ color: "#000"}}>
                
                
            <Card.Body>
-               <Card.Img  id="aries" className="img-thumbnail img-fluid mx-auto d-block" alt="placeholder-horoscope-img"/>  
+               <Card.Img  id="" className="img-thumbnail img-fluid mx-auto d-block" alt="placeholder-horoscope-img"/>  
             <Card.Title id="title">Daily Horoscope </Card.Title>
             <Col>
            <div id="today">
@@ -68,15 +66,18 @@ class Api extends Component {
     <div className="daily-horoscope">
                 
                   
-
-              Current Date: {this.props.data?.current_date ?? ' '} <br />
-              Compatibility: {this.props.data?.compatibility ?? ' '} <br />
-              Lucky Number: {this.props.data?.lucky_number ?? ' '} <br />
-              Lucky Time: {this.props.data?.lucky_time ?? ' '} <br />
-              Color: {this.props.data?.color ?? ' '} <br />
-              Date Range: {this.props.data?.date_range ?? ' '} <br />
-              Mood: {this.props.data?.mood ?? ' '} <br />
-              Horoscope: {this.props.data?.description ?? ' '} <br />
+            
+            Current Date: {this.props.data?.current_date ?? ' '} <br />
+            
+            Compatibility: {this.props.data?.compatibility ?? ' '} <br />
+             
+            Lucky Number: {this.props.data?.lucky_number ?? ' '} <br />
+            Lucky Time: {this.props.data?.lucky_time ?? ' '} <br />
+            Color: {this.props.data?.color ?? ' '} <br />
+            Date Range: {this.props.data?.date_range ?? ' '} <br />
+            Mood: {this.props.data?.mood ?? ' '} <br />
+             
+            Horoscope: {this.props.data?.description ?? ' '} <br />
 
 
             
@@ -88,7 +89,7 @@ class Api extends Component {
     
         </div>
             
-
+        </div>
         
             
         );
