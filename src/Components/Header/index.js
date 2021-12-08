@@ -20,8 +20,6 @@ function Header() {
     return () => document.removeEventListener("mousedown", closeDrawer);
   }, []);
 
-
-
   return (
     <Styles.Wrapper>
       <CSSReset />
@@ -52,7 +50,6 @@ const Styles = {
   Wrapper: styled.main`
     display: flex;
     background-color: #eeeeee;
-    height: 8vh;
   `,
 };
 

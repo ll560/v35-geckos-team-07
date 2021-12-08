@@ -26,19 +26,13 @@ class App extends React.Component {
       this.setState({
         horoscope: data,  
       });
-      
-      
     }
-  
     setSignCallback = (sign) => {
       console.log("Sign date on App.js: " + JSON.stringify(sign))
-      
-     this.setState({
+      this.setState({
         sign: sign,
       });
     }
-
-
   
   render(){
   return (
@@ -48,15 +42,12 @@ class App extends React.Component {
           <Header />
         </header>
         <main>
-        
           <Routes>
             <Route path="/" element={<Home setHoroscopeCallback={this.setHoroscopeCallback} setSignCallback={this.setSignCallback}/>}/>
             <Route path="/horoscope" element={<Horoscope data={this.state.horoscope} sign={this.state.sign} />}/>
             <Route path="/about" element={<About />} />
             <Route path="/team" element={<Developers />} />
           </Routes>
-         
-         
         </main>
         <footer>
           <Footer />
