@@ -99,11 +99,11 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
                 <Col className="sign-column" sm={6} lg={4}> 
                     Aries
                     March 21–April 19
-                    <div id="myDIV" >
+                    
                     <button onClick={navigateHoroscopePage()} type="button" >
                       <img onClick={(e) => handleClick(e)} id="Aries" src={aries_icon} alt="aries icon" /> 
                     </button>
-                    </div>
+                    
                 </Col>
                 <Col className="sign-column" sm={6} lg={4}>
                     Taurus
@@ -163,9 +163,7 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
                     <button onClick={navigateHoroscopePage()} type="button"><img onClick={(e) => handleClick(e)} id="Pisces"src={pisces_icon} alt="pisces icon" /></button>
                 </Col>
             </Row>
-        <Link to="/horoscope">
-           <button type="button" id="let">See your horoscope</button>
-        </Link>
+        
         </Container>
     )
 

@@ -52,12 +52,14 @@ const Styles = {
   Wrapper: styled.main`
     display: flex;
     background-color: #eeeeee;
+    
     height: 8vh;
   `,
 };
 
 const Navbar = {
   Wrapper: styled.nav`
+    z-index:99;
     flex: 1;
 
     align-self: flex-start;
