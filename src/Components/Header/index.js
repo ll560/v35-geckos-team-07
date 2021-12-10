@@ -51,7 +51,7 @@ const Styles = {
     display: flex;
     background-color: #eeeeee;
 
-    height: 6vh;
+    height: 6vh;`
 };
 
 const Navbar = {
