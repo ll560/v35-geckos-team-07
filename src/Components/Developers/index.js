@@ -1,19 +1,23 @@
 import React from "react";
+import profile_icon from "../../assets/profile_icon.png";
+import "../Developers/developers.css";
 
 function Developers() {
   return (
     <div className="Meet-Developers-Grid">
       <div className="Developer-01">
-        <label>Marilyn</label>
+        <img id="profile" src={profile_icon} alt="profile pics" />
+        <a href="https://github.com/MarilynPapadopoulos">
+          Marilyn Papadopoulos
+        </a>
       </div>
       <div className="Developer-02">
-        <label>Lisa</label>
+        <img id="profile" src={profile_icon} alt="profile pics" />
+        <a href="https://github.com/ll560">Lisa</a>
       </div>
       <div className="Developer-03">
-        <label>Ashley</label>
-      </div>
-      <div className="Developer-04">
-        <label>Leona</label>
+        <img id="profile" src={profile_icon} alt="profile pics" />
+        <a href="https://github.com/ach0319">Ashley Christie</a>
       </div>
     </div>
   );
