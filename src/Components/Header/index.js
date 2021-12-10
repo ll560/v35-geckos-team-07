@@ -50,8 +50,8 @@ const Styles = {
   Wrapper: styled.main`
     display: flex;
     background-color: #eeeeee;
-
     height: 6vh;
+  `,
 };
 
 const Navbar = {
