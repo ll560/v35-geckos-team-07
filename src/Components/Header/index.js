@@ -20,14 +20,12 @@ function Header() {
     return () => document.removeEventListener("mousedown", closeDrawer);
   }, []);
 
-
-
   return (
     <Styles.Wrapper>
       <CSSReset />
       <Navbar.Wrapper>
         <Link to="/">
-          <Navbar.Logo >ZODAILY</Navbar.Logo>
+          <Navbar.Logo>ZODAILY</Navbar.Logo>
         </Link>
 
         <HamburgerButton.Wrapper onClick={() => toggleDrawer(true)}>
@@ -52,7 +50,7 @@ const Styles = {
   Wrapper: styled.main`
     display: flex;
     background-color: #eeeeee;
-    height: 8vh;
+    height: 6vh;
   `,
 };
 
@@ -81,6 +79,7 @@ const Navbar = {
     position: relative;
     padding: 0.5rem 1rem;
     background-color: #456990;
+    font-family: "Sigmar One", cursive;
     background-image: linear-gradient(45deg, #a677a6, #e2cad1);
     background-size: 100%;
     background-repeat: repeat;
@@ -102,7 +101,7 @@ const Navbar = {
     @media only screen and (max-width: 1024px) {
       position: fixed;
       right: 0;
-      top: 6vh;
+      top: 8vh;
       width: 100%;
       height: 15%;
       background-color: #456990;
@@ -118,16 +117,13 @@ const Navbar = {
       transform: ${({ openDrawer }) =>
         openDrawer ? `translateX(0)` : `translateX(100%)`};
     }
-
-    @media only screen and (max-width: 40em) {
-      top: 8vh;
-    }
   `,
   Item: styled.li`
     padding: 0 3rem;
     cursor: pointer;
     font-size: 2.5rem;
     color: #3d3d3d;
+    font-family: "Sigmar One", cursive;
     font-weight: bold;
 
     @media only screen and (max-width: 1024px) {
