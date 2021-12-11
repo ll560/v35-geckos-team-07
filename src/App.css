@@ -9,7 +9,7 @@
 
 /* Home Starts */
 .home-container {
-  margin: auto 30px;
+  margin: 30px 30px auto 30px;
 }
 .home-heading {
   text-align: center;
