@@ -1,0 +1,79 @@
+﻿body {
+  background-color: #f0f5f9;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.Developer-02,
+.Developer-01,
+.Developer-03 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Developer-01 {
+  grid-area: one;
+}
+
+.Developer-02 {
+  grid-area: two;
+}
+
+.Developer-03 {
+  grid-area: three;
+}
+
+.Meet-Developers-Grid {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "one . two"
+    ". three .";
+  justify-content: center;
+  margin-top: 15rem;
+  background-image: linear-gradient(45deg, #a677a6, #e2cad1, #d08b8d);
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+  padding: 5rem;
+  font-family: "Sigmar One", cursive;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.Meet-Developers-Grid a {
+  margin-right: auto;
+  margin-left: auto;
+  text-decoration: none;
+  color: #f0f5f9;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Meet-Developers-Grid {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-top: 12rem;
+  }
+
+  .Developer-02,
+  .Developer-03 {
+    margin-top: 5rem;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .Meet-Developers-Grid {
+    width: 80%;
+    margin-top: 8rem;
+    padding: 4rem;
+  }
+}
