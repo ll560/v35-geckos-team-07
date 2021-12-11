@@ -5,7 +5,6 @@ import background_horoscope from '../../assets/background_horoscope.jpg'
 
 class Api extends Component {
     
-   
 
     constructor(props){
         super(props);
@@ -15,10 +14,9 @@ class Api extends Component {
         }
         
     }
-   
+
       
     componentDidMount () {
-        
         
         let sign=this.props.sign ?? " " 
         console.log(sign) 
@@ -47,22 +45,17 @@ class Api extends Component {
             <div>    
                 <div className="sign-info">
             </div>
-       <Row>
-           
-           
+       <Row>   
        </Row>
-           <Card className="mb-3" style={{ color: "#000"}}>
-               
-               
-           <Card.Body className="card-body" style={{backgroundImage: `url(${background_horoscope})`, margin:"45px",  opacity: 1} }>
-               
-            <Card.Title id="title" >Daily Horoscope </Card.Title>
+           <Card className="mb-3" style={{ color: "#000"}}>   
+           <Card.Body className="card-body" >
+            <Card.Title id="title" >Sign: {this.props.sign ?? " "}</Card.Title>
              {/* <Card.Img  id="title" src={background_horoscope} className="img-thumbnail img-fluid mx-auto d-block" alt="placeholder-horoscope-img"></Card.Img>  */}
-            
             <Col>
 
            <div id="today">
-           <Button className="btn btn-lg" id="sign-text">Sign: {this.props.sign ?? " "}  <br /></Button>
+           <Button className="btn btn-lg" id="sign-text" style={{width:"20%", height: "30px", margin: "5px"}}>Today<br/></Button>
+           
            </div>
            </Col>
 

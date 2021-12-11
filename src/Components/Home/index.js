@@ -113,9 +113,9 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
                 
                 </Col> 
                 <Col className="sign-column" sm={6} lg={4}>
-                    Gemeni
+                    Gemini
                     May 21–June 21
-                    <button onClick={navigateHoroscopePage()} type="button" ><img onClick={(e) => handleClick(e)} id="gemeni" src={gemeni_icon} alt="gemeni icon" /></button>
+                    <button onClick={navigateHoroscopePage()} type="button" ><img onClick={(e) => handleClick(e)} id="Gemini" src={gemeni_icon} alt="gemini icon" /></button>
                 </Col>
                 <Col className="sign-column" sm={6} lg={4}>
                     Cancer 
