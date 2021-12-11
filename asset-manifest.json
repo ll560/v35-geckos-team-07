@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/v35-geckos-team-07/static/css/main.4f6a51d9.chunk.css",
+    "main.js": "/v35-geckos-team-07/static/js/main.9381fbdf.chunk.js",
+    "main.js.map": "/v35-geckos-team-07/static/js/main.9381fbdf.chunk.js.map",
+    "runtime-main.js": "/v35-geckos-team-07/static/js/runtime-main.91e50cbf.js",
+    "runtime-main.js.map": "/v35-geckos-team-07/static/js/runtime-main.91e50cbf.js.map",
+    "static/js/2.cf0d60bc.chunk.js": "/v35-geckos-team-07/static/js/2.cf0d60bc.chunk.js",
+    "static/js/2.cf0d60bc.chunk.js.map": "/v35-geckos-team-07/static/js/2.cf0d60bc.chunk.js.map",
+    "static/js/3.43a3efb0.chunk.js": "/v35-geckos-team-07/static/js/3.43a3efb0.chunk.js",
+    "static/js/3.43a3efb0.chunk.js.map": "/v35-geckos-team-07/static/js/3.43a3efb0.chunk.js.map",
+    "index.html": "/v35-geckos-team-07/index.html",
+    "static/css/main.4f6a51d9.chunk.css.map": "/v35-geckos-team-07/static/css/main.4f6a51d9.chunk.css.map",
+    "static/js/2.cf0d60bc.chunk.js.LICENSE.txt": "/v35-geckos-team-07/static/js/2.cf0d60bc.chunk.js.LICENSE.txt",
+    "static/media/background_horoscope.2b06740f.jpg": "/v35-geckos-team-07/static/media/background_horoscope.2b06740f.jpg",
+    "static/media/profile_icon.64215f9f.png": "/v35-geckos-team-07/static/media/profile_icon.64215f9f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91e50cbf.js",
+    "static/js/2.cf0d60bc.chunk.js",
+    "static/css/main.4f6a51d9.chunk.css",
+    "static/js/main.9381fbdf.chunk.js"
+  ]
+}
