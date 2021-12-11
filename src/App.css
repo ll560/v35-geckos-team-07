@@ -6,8 +6,16 @@
 .App {
   text-align: center;
 }
+
+/* Home Starts */
 .home-container {
   margin: auto 30px;
+}
+.home-heading {
+  text-align: center;
+  font-family: 'Sigmar One', cursive;
+  font-size: 65px;
+  color: #456990;
 }
 .sign-row {
   display: flex;
@@ -17,14 +25,41 @@
   gap: 10px;
 }
 .sign-column {
-  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
-  margin: 10px auto;
+  margin: 0 auto;
   flex: 1 1 30%;
+  align-items: center;
 }
+.icon-button {
+  border-radius: 50%;
+  padding: 100px;
+  margin-top: 30px;
+  background: linear-gradient(#A677A6, #E2CAD1);
+  border: none;
+  box-shadow: 3px 3px 3px 3px  #456990;
+}
+.sign-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.8em;
+  margin-top: 20px;
+}
+.sign-name {
+  font-weight: bold;
+  font-size: 32px;
+}
+.sign-date {
+  font-size: 18px;
+  color: #3D3D3D;
+}
+/* Home Ends */
 @media screen and (max-width: 376px) {
   .sign-column {
     flex-basis: 50%;
+    padding: 50px;
   }
 
 
