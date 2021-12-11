@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/v35-geckos-team-07/static/css/main.4f6a51d9.chunk.css",
-    "main.js": "/v35-geckos-team-07/static/js/main.9381fbdf.chunk.js",
-    "main.js.map": "/v35-geckos-team-07/static/js/main.9381fbdf.chunk.js.map",
+    "main.js": "/v35-geckos-team-07/static/js/main.9798064a.chunk.js",
+    "main.js.map": "/v35-geckos-team-07/static/js/main.9798064a.chunk.js.map",
     "runtime-main.js": "/v35-geckos-team-07/static/js/runtime-main.91e50cbf.js",
     "runtime-main.js.map": "/v35-geckos-team-07/static/js/runtime-main.91e50cbf.js.map",
     "static/js/2.cf0d60bc.chunk.js": "/v35-geckos-team-07/static/js/2.cf0d60bc.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.91e50cbf.js",
     "static/js/2.cf0d60bc.chunk.js",
     "static/css/main.4f6a51d9.chunk.css",
-    "static/js/main.9381fbdf.chunk.js"
+    "static/js/main.9798064a.chunk.js"
   ]
 }
