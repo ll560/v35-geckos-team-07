@@ -50,13 +50,8 @@ const Styles = {
   Wrapper: styled.main`
     display: flex;
     background-color: #eeeeee;
-<<<<<<< HEAD
-
-    height: 6vh;`
-=======
     height: 6vh;
   `,
->>>>>>> development
 };
 
 const Navbar = {
