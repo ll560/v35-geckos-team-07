@@ -1,0 +1,31 @@
+﻿.footer {
+  background-color: #f0f5f9;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+  font-weight: bold;
+  color: #a677a6;
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer p {
+  display: inline;
+}
+
+.footer-love {
+  color: #a677a6;
+}
+
+.footer span {
+  margin-right: 2rem;
+}
+
+.footer-link {
+  color: #3d3d3d;
+}
