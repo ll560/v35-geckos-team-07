@@ -106,6 +106,7 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
                         <p className="sign-name">Aries</p> 
                         <p className="sign-date">(March 21–April 20)</p>
                     </div>
+
                 </Col>
                 <Col className="sign-column" sm={6} lg={4}>
                     <div className="icon-container">
@@ -229,9 +230,7 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
                     </div>
                 </Col>
             </Row>
-        <Link to="/horoscope">
-           <button type="button" id="let">See your horoscope</button>
-        </Link>
+        
         </Container>
     )
 
