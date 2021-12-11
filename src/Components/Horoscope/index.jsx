@@ -51,14 +51,15 @@ class Api extends Component {
            <Card.Body className="card-body" >
             <Card.Title id="title" >Sign: {this.props.sign ?? " "}</Card.Title>
              {/* <Card.Img  id="title" src={background_horoscope} className="img-thumbnail img-fluid mx-auto d-block" alt="placeholder-horoscope-img"></Card.Img>  */}
-            <Col>
+             {/* <Col>
 
-           <div id="today">
-           <Button className="btn btn-lg" id="sign-text" style={{width:"20%", height: "30px", margin: "5px"}}>Today<br/></Button>
-           
-           </div>
+      
+             <div id="today">
+             <Button className="btn btn-lg" id="sign-text" style={{width:"20%", height: "30px", margin: "5px"}}>Today<br/></Button>
+             
+             </div>
            </Col>
-
+            */}
     <div className="daily-horoscope">
                 
                   
