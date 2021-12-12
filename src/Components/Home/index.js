@@ -35,7 +35,7 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
                 "method": "POST",
                 "headers": {
                     "x-rapidapi-host": "sameer-kumar-aztro-v1.p.rapidapi.com",
-                    "x-rapidapi-key": "c69ac320d9msh4f92145a07ef9a5p11a204jsnffcc7b05808d"
+                    "x-rapidapi-key": process.env.REACT_APP_API_KEY
                 }
             })
 
