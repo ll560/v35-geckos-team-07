@@ -79,7 +79,9 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
     } 
    }
 
-
+setTimeout(function(){
+    navigateHoroscopePage();
+}, 5500);
     
 
 
