@@ -24,7 +24,7 @@ function Header() {
     <Styles.Wrapper>
       <CSSReset />
       <Navbar.Wrapper>
-        <Link to="/">
+        <Link to="/v35-geckos-team-07">
           <Navbar.Logo>ZODAILY</Navbar.Logo>
         </Link>
 

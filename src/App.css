@@ -9,7 +9,7 @@
 
 /* Home Starts */
 .home-container {
-  margin: auto 30px;
+  margin: 30px 30px auto 30px;
 }
 .home-heading {
   text-align: center;
@@ -47,6 +47,7 @@
   line-height: 1.8em;
   margin-top: 20px;
   font-family: 'Sigmar One', cursive;
+  color: #3D3D3D;
 }
 .sign-name {
   font-weight: bold;
@@ -54,7 +55,6 @@
 }
 .sign-date {
   font-size: 18px;
-  color: #3D3D3D;
 }
 /* Home Ends */
 @media screen and (max-width: 376px) {
