@@ -43,7 +43,7 @@ class App extends React.Component {
         </header>
         <main>
           <Routes>
-            <Route path="/" element={<Home setHoroscopeCallback={this.setHoroscopeCallback} setSignCallback={this.setSignCallback}/>}/>
+            <Route path="/v35-geckos-team-07" element={<Home setHoroscopeCallback={this.setHoroscopeCallback} setSignCallback={this.setSignCallback}/>}/>
             <Route path="/horoscope" element={<Horoscope data={this.state.horoscope} sign={this.state.sign} />}/>
             <Route path="/about" element={<About />} />
             <Route path="/team" element={<Developers />} />
