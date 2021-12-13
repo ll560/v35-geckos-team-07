@@ -5,7 +5,7 @@ import '../../App.css'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import aries_icon from '../../assets/aries_icon.png';
+import aries_icon from '../../assets/aries_icon2.png';
 import taurus_icon from '../../assets/taurus_icon.png';
 import gemeni_icon from '../../assets/gemeni_icon.png';
 import cancer_icon from '../../assets/cancer_icon.png';
@@ -68,20 +68,20 @@ function Home({setCurrent, components, setHoroscopeCallback, setSignCallback}) {
         return sign;
     
     }
-
+// setTimeout(function(){
+//     navigateHoroscopePage();
+// }, 5000);
   let navigate = useNavigate(); 
   
-   function navigateHoroscopePage() {
+function navigateHoroscopePage() {
     if (sign !==""){
-    navigate('/horoscope')
+        navigate('/horoscope')
     console.log("Selected sign and navigated")
        
-    } 
+    }
    }
 
-setTimeout(function(){
-    navigateHoroscopePage();
-}, 5500);
+
     
 
 
