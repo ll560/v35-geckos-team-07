@@ -49,7 +49,7 @@ class Api extends Component {
        </Row>
            <Card className="mb-3" style={{ color: "#000"}}>   
            <Card.Body className="card-body" >
-            <Card.Title id="title" >Sign: {this.props.sign ?? " "}</Card.Title>
+            <Card.Title id="title" >{this.props.sign ?? " "}</Card.Title>
              {/* <Card.Img  id="title" src={background_horoscope} className="img-thumbnail img-fluid mx-auto d-block" alt="placeholder-horoscope-img"></Card.Img>  */}
              {/* <Col>
 
