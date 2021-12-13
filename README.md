@@ -28,9 +28,9 @@
 
 ## About The Project
 
-About the APP description
+ZODAILY is a mobile-responsive application built with an API (Astro-API) that provides users with their daily horoscope with just a click on their zodiac sign. Along with the daily horoscope, the user also find out which sign they are compatible with, lucky number, lucky time, color and date range.
 
-"Live Link"
+<a href="http://chingu-voyages.github.io/v35-geckos-team-07">LIVE LINK</a>
 
 ### Built With
 
